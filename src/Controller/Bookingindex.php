@@ -3,20 +3,19 @@
 
 namespace App\Controller;
 
-namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class BookingIndex extends AbstractController
+class Bookingindex extends AbstractController
 {
     /**
      * @Route("/create_booking")
      */
     public function create_booking(): Response
     {
-        return $this->render('create_booking.html.twig');
+        return $this->render('booking.html.twig');
     }
     /**
      * @Route("/bookings")
